@@ -10,6 +10,7 @@
 	margin: 0 auto;
 	height: 400px;
 	width: auto;
+	padding-top: 4%;
 }
 
 .logo-nav{
@@ -152,6 +153,9 @@ hr{
 	width: 100%;
 }
 
+p.welcome{
+	padding:0;
+}
 
 
 
