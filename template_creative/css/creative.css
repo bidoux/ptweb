@@ -25,10 +25,16 @@
 }
 
 h2{
-	border: 2px solid #222222;
+	border: 1px solid #222222;
 	padding: 5px;
-	width: 300px;
+	width: 320px;
 	margin: 0 auto;
+	font-size: 35px;
+}
+
+.content_video{
+	text-align: center;
+	padding: 20px;
 }
 
 
@@ -158,8 +164,9 @@ p.welcome{
 }
 
 
-
-
+.p_blanc{
+	color: white!important;
+}
 
 
 
