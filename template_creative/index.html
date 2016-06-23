@@ -35,8 +35,10 @@
 	<link rel="stylesheet" href="./simple-responsive-content-slider/css/style.css">
 	
 	<!-- Timeline -->
-	<link rel="stylesheet" href="./css-timeline/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./responsive-timeline-w-fade-animations/css/reset.css">
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Raleway:700,400'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+	<link rel="stylesheet" href="./responsive-timeline-w-fade-animations/css/style.css">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -292,45 +294,91 @@
   
 <!-- The Timeline -->
 
-<ul class="timeline">
+ <div class="timeline-wrap" style="background-color: #272727">
+   <ul class="timeline timeline--first">
+      <li class="era">
+         <h2 class="era__title">2015-2016</h2>
+      </li>
+      <li class="entry entry--left">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Bacon ipsum dolor amet ball tip jerky sirloin pancetta capicola prosciutto meatball pig leberkas cow pork chop shank meatloaf.</p>
+         </div>
+      </li>
+      <li class="entry entry--right">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Ground round short ribs fatback, salami shoulder sausage chuck shankle landjaeger drumstick ribeye meatloaf doner.</p>
+         </div>
+      </li>
+      <li class="entry entry--left">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Swine pork belly prosciutto jowl pork chop chicken filet mignon cupim doner boudin.</p>
+         </div>
+      </li>
+   </ul>
+</div>
+<div class="timeline-wrap" style="background-color: #222222">
+   <ul class="timeline">
+      <li class="era">
+         <h2 class="era__title">2014-2015</h2>
+      </li>
+      <li class="entry entry--right">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Jerky corned beef jowl cupim hamburger, alcatra meatball swine pork chop ribeye leberkas short loin tenderloin picanha venison.</p>
+         </div>
+      </li>
+      <li class="entry entry--left">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Ribeye turducken flank cupim ball tip ham pork belly venison biltong pork chop jowl andouille spare ribs.</p>
+         </div>
+      </li>
+      <li class="entry entry--right">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Jerky corned beef jowl cupim hamburger, alcatra meatball swine pork chop ribeye leberkas short loin tenderloin picanha venison. Ribeye turducken flank cupim ball tip ham pork belly venison biltong pork chop jowl andouille spare ribs.</p>
+         </div>
+      </li>
+   </ul>
+</div>
+<div class="timeline-wrap" style="background-color: #272727">
+   <ul class="timeline">
+      <li class="era">
+         <h2 class="era__title">Last Era</h2>
+      </li>
+      <li class="entry entry--left">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Landjaeger cow flank ribeye meatball, corned beef tongue.</p>
+         </div>
+      </li>
+      <li class="entry entry--right">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Landjaeger cow flank ribeye meatball, corned beef tongue.</p>
+         </div>
+      </li>
+      <li class="entry entry--left">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Landjaeger cow flank ribeye meatball, corned beef tongue.</p>
+         </div>
+      </li>
+      <li class="entry entry--right">
+         <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h2>Bacon Ipsum</h2>
+            <p>Landjaeger cow flank ribeye meatball, corned beef tongue.</p>
+         </div>
+      </li>
+   </ul>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://noisyblue.com/scripts/wow.min.js'></script>
 
-	<!-- Item 1 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Freelancer</span>
-				<span class="time-wrapper"><span class="time">2013 - present</span></span>
-			</div>
-			<div class="desc">My current employment. Way better than the position before!</div>
-		</div>
-	</li>
-  
-	<!-- Item 2 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">Apple Inc.</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-			</div>
-			<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-		</div>
-	</li>
-
-	<!-- Item 3 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Harvard University</span>
-				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-			</div>
-			<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-		</div>
-	</li>
-  
-</ul>
-						
-						
-						
+        <script src="./responsive-timeline-w-fade-animations/js/index.js"></script>		
 					</div>
 				</div>
 			</div>
@@ -352,27 +400,23 @@
 			</div>			
 			<div id="slider">
 				<div class="slide">
-					<div class="slide-copy">
-						<h3>Les nouvelles technologies</h3>
-						
-					</div>
+					
 					<div class="img1"></div>
 				</div>
 				
 				<div class="slide">
-					<div class="slide-copy">
-						<h3>Photographie</h3>
-						
-					</div>
+				
 					<div class="img2"></div>
 				</div>
 				
 				<div class="slide">
-					<div class="slide-copy">
-						<h3>Handball</h3>
-						
-					</div>
+				
 					<div class="img3"></div>
+				</div>
+				
+				<div class="slide">
+				
+					<div class="img5"></div>
 				</div>
 				
 			</div>
