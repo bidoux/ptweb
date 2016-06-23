@@ -62,30 +62,34 @@ p{
 	height:100%;
 }
 .slide:nth-child(1){
-	background-image: url(../../PhotographyWebsiteConcept/img/portfolio/mundstock/5.jpg);
-	background-size: cover;
+	background-image: url(../img/interet/img1.jpg);
+	background-size: contain;
+	background-position: center;
 }
 
 .slide:nth-child(2){
-	background-image: url(../img/moi.jpg);
-	background-size: cover;
+	background-image: url(../img/interet/img2.jpg);
+	background-size: contain;
+	background-position: center;
 }
 
 .slide:nth-child(3){
-	background-image: url(../img/hand.jpg);
-	background-size: cover;
+	background-image: url(../img/interet/img3.jpg);
+	background-size: contain;
+	background-position: center;
 }
 
 .slide:nth-child(4){
-	background-image: url(../../PhotographyWebsiteConcept/img/portfolio/paris/2.jpg);
-	background-size: cover;
+	background-image: url(../img/interet/img4.jpg);
+	background-size: contain;
+	background-position: center;
 }
 
 .slide:nth-child(5){
-	background-image: url(../../PhotographyWebsiteConcept/img/portfolio/paysages/3.jpg);
-	background-size: cover;
+	background-image: url(../img/interet/img5.jpg);
+	background-size: contain;
+	background-position: center;
 }
-
 
 .slide-copy{
 	position:absolute;

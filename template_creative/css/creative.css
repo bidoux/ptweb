@@ -50,20 +50,23 @@ h2{
 	display: block;
 	width: 430px;
 	height: 250.63px;
+	margin: 0 auto;
 }
 
 .hover:hover .hover-v{
-	z-index: -10;
+	z-index: 10;
 }
 .hover-v{
 
 	height: 250.63px;
 	width: 430px;
-	z-index: 1000;
-	background-color: orange;
+	z-index: -10;
+	background-color: grey;
 	position: relative;
 	float: left;
 	margin-top: -250px;
+	opacity: 0.9;
+	text-align: center;
 }
 
 .portfolio-box {
@@ -76,6 +79,9 @@ h2{
 .titre_video{
 	text-align: center;
 	line-height: 250.63px;
+	color: darkorange;
+	font-size:40px;
+	font-weight: bold;
 }
 
 footer{
@@ -168,8 +174,32 @@ p.welcome{
 	color: white!important;
 }
 
+/*.description{
+	text-align: center;
+	width: 90%;
+	margin:0 auto;
+	margin-top: 2%;
+}
+
+.logiciel{
+	display:  inline;
+	padding: 6%;
+	font-size: 20px;
+	
+}*/
 
 
+.btn{
+	background-color: darkorange!important;
+}
+
+.photos{
+	color: white!important;
+}
+
+.pourcent:hover{
+	color: transparent!important;
+}
 
 /*-----------Formulaire --------------*/
 
@@ -197,7 +227,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 450px;
+	width: 600px;
 	margin: 0 auto;
 	position:relative;
   margin-top:30px;
@@ -289,10 +319,10 @@ input:focus, textarea:focus {
 #button-blue{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
-	width: 100%;
+	width: 93.5%;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
-	background-color: #3498db;
+	background-color: orange;
 	color:white;
 	font-size:24px;
 	padding-top:22px;
@@ -306,7 +336,7 @@ input:focus, textarea:focus {
 
 #button-blue:hover{
 	background-color: rgba(0,0,0,0);
-	color: #0493bd;
+	color: orange;
 }
 	
 .submit:hover {
@@ -325,7 +355,7 @@ input:focus, textarea:focus {
 }
 
 .submit:hover .ease{
-  width:100%;
+  width: 93.5%;
   background-color:white;
 }
 
@@ -339,9 +369,6 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 }
-
-	
-
 
 
 

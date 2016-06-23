@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// options
 	var speed = 500; //transition speed - fade
 	var autoswitch = true; //auto slider options
-	var autoswitch_speed = 5000; //auto slider speed
+	var autoswitch_speed = 3000; //auto slider speed
 	
 	// add first initial active class
 	$(".slide").first().addClass("active");

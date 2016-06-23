@@ -1007,12 +1007,28 @@
 .c100:hover {
   cursor: default;
 }
-.c100:hover > span {
-  width: 3.33em;
-  line-height: 3.33em;
-  font-size: 0.3em;
-  color: #307bbb;
+
+.purple:hover > span {
+ background-image: url(../img/logiciel/premiere.png);
+ background-size: contain;
 }
+
+.pink:hover > span {
+ background-image: url(../img/logiciel/effects.jpg);
+ background-size: contain;
+}
+
+.bluesky:hover > span {
+ background-image: url(../img/logiciel/photoshop.jpg);
+ background-size: contain;
+}
+
+.orange:hover > span {
+ background-image: url(../img/logiciel/illustrator.jpg);
+ background-size: contain;
+}
+
+
 .c100:hover:after {
   top: 0.04em;
   left: 0.04em;
