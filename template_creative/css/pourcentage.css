@@ -1008,13 +1008,27 @@
   cursor: default;
 }
 
+#preloader{
+	width: 0;
+	height: 0;
+	display: inline;
+	background-image: url(../img/logiciel/effects.jpg);
+	background-image: url(../img/logiciel/premiere.png);
+	 background-image: url(../img/logiciel/photoshop.jpg);
+	 background-image: url(../img/logiciel/illustrator.jpg);
+	 background-image: url(../img/logiciel/anglais.jpg);
+	 background-image: url(../img/logiciel/allemand.jpg);
+	 background-image: url();
+}
+
+
 .purple:hover > span {
- background-image: url(../img/logiciel/premiere.png);
+ background-image: url(../img/logiciel/effects.jpg);
  background-size: contain;
 }
 
-.pink:hover > span {
- background-image: url(../img/logiciel/effects.jpg);
+.rose:hover > span {
+ background-image: url(../img/logiciel/premiere.png);
  background-size: contain;
 }
 
@@ -1027,6 +1041,20 @@
  background-image: url(../img/logiciel/illustrator.jpg);
  background-size: contain;
 }
+
+.bleu:hover > span {
+ background-image: url(../img/logiciel/anglais.jpg);
+ background-size: contain;
+}
+
+.red:hover > span {
+ background-image: url(../img/logiciel/allemand.jpg);
+ background-size: contain;
+}
+
+
+
+
 
 
 .c100:hover:after {
@@ -1097,24 +1125,24 @@
 }
 
 
-.c100.pink .bar,
-.c100.pink .fill {
+.c100.rose .bar,
+.c100.rose .fill {
   border-color: hotpink!important;
 }
-.c100.pink:hover > span {
+.c100.rose:hover > span {
   color: hotpink;
 }
-.c100.pink.dark .bar,
-.c100.pink.dark .fill {
+.c100.rose.dark .bar,
+.c100.rose.dark .fill {
   border-color: deeppink!important;
 }
-.c100.orange.dark:hover > span {
+.c100.rose.dark:hover > span {
   color: deeppink;
 }
 
 
 .c100.bluesky .bar,
-.c100.pink .fill {
+.c100.bluesky .fill {
   border-color: royalblue!important;
 }
 .c100.bluesky:hover > span {
@@ -1128,5 +1156,36 @@
   color: dodgerblue;
 }
 
+
+.c100.bleu .bar,
+.c100.bleu .fill {
+  border-color: darkblue;
+}
+.c100.bleu:hover > span {
+  color: darkblue;
+}
+.c100.bleu.dark .bar,
+.c100.bleu.dark .fill {
+  border-color: blue;
+}
+.c100.bleu.dark:hover > span {
+  color:blue;
+}
+
+
+.c100.red.bar,
+.c100.red.fill {
+  border-color: red;
+}
+.c100.red:hover > span {
+  color: red;
+}
+.c100.red.dark .bar,
+.c100.red.dark .fill {
+  border-color: darkred;
+}
+.c100.red.dark:hover > span {
+  color:darkred;
+}
 
 

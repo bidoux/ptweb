@@ -6,11 +6,19 @@
 
 /*-------------- Perso css -------------*/
 
+html{
+	background-color: #222222!important;
+}
+
+
+
+.hidden{
+	font-size: 0;
+}
+
 .logo{
-	margin: 0 auto;
-	height: 400px;
-	width: auto;
-	padding-top: 4%;
+	width:50%;
+	margin-top: 5%;
 }
 
 .logo-nav{
@@ -22,12 +30,14 @@
 #contact{
 	background-color:#222222;
 	color: white;
+	padding-top: 10px;
+	text-align: center;
 }
 
 h2{
 	border: 1px solid #222222;
 	padding: 5px;
-	width: 320px;
+	max-width: 320px;
 	margin: 0 auto;
 	font-size: 35px;
 }
@@ -48,8 +58,8 @@ h2{
 
 .hover{
 	display: block;
-	width: 430px;
-	height: 250.63px;
+	max-width: 430px;
+	max-height: 250.63px;
 	margin: 0 auto;
 }
 
@@ -57,21 +67,19 @@ h2{
 	z-index: 10;
 }
 .hover-v{
-
-	height: 250.63px;
-	width: 430px;
-	z-index: -10;
-	background-color: grey;
-	position: relative;
-	float: left;
-	margin-top: -250px;
-	opacity: 0.9;
+	width: 100%;
+	max-height: 250.63px;
 	text-align: center;
+	position: relative;
+	margin-top: -250px;
+	float: left;
+	background-color: darkorange;
+	z-index: -10;
 }
 
 .portfolio-box {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 	padding: 10px;
 }
@@ -79,70 +87,50 @@ h2{
 .titre_video{
 	text-align: center;
 	line-height: 250.63px;
-	color: darkorange;
+	color: white;
 	font-size:40px;
 	font-weight: bold;
 }
 
 footer{
-	height: 120px;
-	position: relative;
+	height: 50px;
+	background-color: #2f3238;
+	
 }
 
-#copyright{
-	position: absolute;
-	bottom: 0;
-	margin-left: 20px;
-	font-family:  'Montserrat', Arial, Helvetica, sans-serif;
-	color: black;
+footer > p{
+	text-align: center;
+	line-height: 50px;
+	color: white;
 }
 
-.icone{
-	margin-top: 25px;
-	float: right;
-	margin-right: 20px;
-}
-
-footer i{
-	padding: 20px;
-}
-
-.fa-facebook-square{
-	color: darkblue;
-}
-
-.fa-instagram{
-	color: brown;
-}
-
-.fa-twitter-square{
-	color: deepskyblue;
-}
-
-.logo_footer{
-	height: 80px;
-	margin-left: 46%;
-	margin-top: 40px;
-}
 
 .pourcentage{
-	width: 960px;
-	margin: 0 auto;
-	margin-top: 50px;
+	display: inline-block;
+	text-align: center;
+	padding: 15px;
+}
+
+.c100{
+	margin-left:50px;
 }
 
 .Interets{
 	background-color: #262626;
+	padding-bottom: 0;
 }
 
 .service{
-	background-color: #262626;
+	background-color: #2f3238;
+	text-align: center;
+	padding-bottom: 50px;
 }
 
 
 .blanc{
 	border: 2px solid white!important;
 	color: white! important;
+	text-align: center;
 }
 
 hr{
@@ -201,14 +189,19 @@ p.welcome{
 	color: transparent!important;
 }
 
+.cv{
+	margin-top: 50px;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+
 /*-----------Formulaire --------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
-  background-size: cover;
-  height:100%;
-}
 
 #feedback-page{
 	text-align:center;
@@ -219,6 +212,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	float:left;
 	padding-top:0px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 #form-div {
@@ -229,10 +223,10 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	padding-bottom:50px;
 	width: 600px;
 	margin: 0 auto;
-	position:relative;
   margin-top:30px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+	text-align: center;
 }
 
 .feedback-input {
@@ -251,6 +245,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
   border: 3px solid rgba(0,0,0,0);
+	margin-left: 3%;
 }
 
 .feedback-input:focus{
@@ -332,6 +327,7 @@ input:focus, textarea:focus {
 	transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
+	margin-left: 3%;
 }
 
 #button-blue:hover{
@@ -352,6 +348,7 @@ input:focus, textarea:focus {
 	-o-transition: .3s ease;
 	-ms-transition: .3s ease;
 	transition: .3s ease;
+	margin-left: 3%;
 }
 
 .submit:hover .ease{
@@ -480,7 +477,7 @@ aside {
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 0;
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -528,6 +525,7 @@ header {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/sunset.JPG');
+	background-attachment: fixed;
   text-align: center;
   color: white;
 }
@@ -642,6 +640,7 @@ header .header-content .header-content-inner p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+	
 }
 .call-to-action h2 {
   margin: 0 auto 20px;
