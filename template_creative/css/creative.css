@@ -108,7 +108,8 @@ footer > p{
 .pourcentage{
 	display: inline-block;
 	text-align: center;
-	padding: 15px;
+	padding: 50px;
+	
 }
 
 .c100{
@@ -195,6 +196,11 @@ p.welcome{
 
 a:link{
 	text-decoration: none;
+}
+
+.titre{	position:absolute;
+margin-top: 70%;
+	color: white!important;
 }
 
 

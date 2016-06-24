@@ -231,6 +231,7 @@
   float: left;
   margin: 0 0.5em 0.1em 0.5em;
   background-color: #cccccc;
+	margin-bottom:40px;
 }
 .c100 *,
 .c100 *:before,
@@ -1022,36 +1023,39 @@
 }
 
 
-.purple:hover > span {
+.purple:hover >.pourcent {
  background-image: url(../img/logiciel/effects.jpg);
  background-size: contain;
 }
 
-.rose:hover > span {
+.rose:hover > .pourcent {
  background-image: url(../img/logiciel/premiere.png);
  background-size: contain;
 }
 
-.bluesky:hover > span {
+.bluesky:hover > .pourcent {
  background-image: url(../img/logiciel/photoshop.jpg);
  background-size: contain;
 }
 
-.orange:hover > span {
+.orange:hover > .pourcent {
  background-image: url(../img/logiciel/illustrator.jpg);
  background-size: contain;
 }
 
-.bleu:hover > span {
+.bleu:hover > .pourcent {
  background-image: url(../img/logiciel/anglais.jpg);
  background-size: contain;
 }
 
-.red:hover > span {
+.red:hover > .pourcent {
  background-image: url(../img/logiciel/allemand.jpg);
  background-size: contain;
 }
 
+.c100:hover{
+	color: transparent;
+}
 
 
 
