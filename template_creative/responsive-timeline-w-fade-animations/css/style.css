@@ -96,14 +96,14 @@
 h3 {
    color: #525252;
    margin-bottom: 0.5em;
-   font-family: "Raleway", Helvetica, sans-serif;
+   /*font-family: "Raleway", Helvetica, sans-serif;*/
    font-size: 22px;
    font-weight: bold;
 }
 
 p {
    color: #686868;
-   font-family: "Raleway", Helvetica, sans-serif;
+   /*font-family: "Raleway", Helvetica, sans-serif;*/
    font-size: 15px;
    line-height: 1.4;
 }

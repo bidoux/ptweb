@@ -7,10 +7,24 @@
 /*-------------- Perso css -------------*/
 
 html{
-	background-color: #222222!important;
+	background-color: #222222;
 }
 
 
+body{
+	font-family: 'code'; 
+	font-weight: bold;
+		
+}
+
+.info{
+	font-family: 'Helvetica';
+}
+
+.code_light{
+	font-family: 'code'!important;
+	font-weight: 100;
+}
 
 .hidden{
 	font-size: 0;
@@ -44,7 +58,12 @@ h2{
 
 .content_video{
 	text-align: center;
-	padding: 20px;
+	margin-top: 20px;
+}
+
+.content_photo{
+	margin-bottom: 0!important;
+	text-align: center;
 }
 
 
@@ -58,17 +77,21 @@ h2{
 
 .hover{
 	display: block;
-	max-width: 430px;
-	max-height: 250.63px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .hover:hover .hover-v{
 	z-index: 10;
 }
+
+.hover:hover .hover-photo{
+	z-index: 10;
+}
+
 .hover-v{
 	width: 100%;
-	max-height: 250.63px;
+	height: 250.63px;
 	text-align: center;
 	position: relative;
 	margin-top: -250px;
@@ -77,19 +100,40 @@ h2{
 	z-index: -10;
 }
 
+.hover-photo{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-top: -330px;
+	float: left;
+	opacity: 0.7;
+	background-color: firebrick;
+	z-index: -10;
+}
+
 .portfolio-box {
   position: relative;
   width: 100%;
   margin: 0 auto;
-	padding: 10px;
+  padding:9px;
 }
 
 .titre_video{
 	text-align: center;
-	line-height: 250.63px;
+	line-height: 625%;
 	color: white;
 	font-size:40px;
 	font-weight: bold;
+	font-family: 'code';
+}
+
+.ph{
+	text-align: center;
+	line-height: 330%;
+	color: white;
+	font-size:100px;
+	font-weight: bold;
+	font-family: 'code';
 }
 
 footer{
@@ -109,6 +153,7 @@ footer > p{
 	display: inline-block;
 	text-align: center;
 	padding: 50px;
+	font-weight: 100;
 	
 }
 
@@ -134,7 +179,7 @@ footer > p{
 	text-align: center;
 }
 
-hr{
+.opac{
 	opacity: 0;
 }
 
@@ -184,6 +229,7 @@ p.welcome{
 
 .photos{
 	color: white!important;
+	margin-top: 20px;
 }
 
 .pourcent:hover{
@@ -201,6 +247,10 @@ a:link{
 .titre{	position:absolute;
 margin-top: 70%;
 	color: white!important;
+}
+
+.hr_portfolio{
+	margin-bottom: 20px;
 }
 
 
@@ -237,7 +287,7 @@ margin-top: 70%;
 
 .feedback-input {
 	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
+	/*font-family: Helvetica, Arial, sans-serif;*/
   font-weight:500;
 	font-size: 18px;
 	border-radius: 0;
@@ -318,7 +368,7 @@ input:focus, textarea:focus {
 }
 
 #button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	/*font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
 	float:left;
 	width: 93.5%;
 	border: #fbfbfb solid 4px;
@@ -384,12 +434,13 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
 }
 hr {
   border-color: #f05f40;
-  border-width: 3px;
+  border-width: 2px;
   max-width: 50px;
+	margin: 0 auto;
 }
 hr.light {
   border-color: white;
@@ -410,7 +461,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
 }
 p {
   font-size: 16px;
@@ -445,14 +496,14 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #f05f40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -524,14 +575,14 @@ aside {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
+  background-size: cover!important;
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/sunset.JPG');
-	background-attachment: fixed;
+  background-attachment: fixed!important;
   text-align: center;
   color: white;
 }
@@ -622,7 +673,7 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -755,7 +806,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #ffffff;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
   border: none;
   border-radius: 300px;
   font-weight: 700;

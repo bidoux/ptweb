@@ -1048,7 +1048,7 @@
  background-size: contain;
 }
 
-.red:hover > .pourcent {
+.rouge:hover > .pourcent {
  background-image: url(../img/logiciel/allemand.jpg);
  background-size: contain;
 }
@@ -1163,33 +1163,33 @@
 
 .c100.bleu .bar,
 .c100.bleu .fill {
-  border-color: darkblue;
+  border-color: darkblue!important;
 }
 .c100.bleu:hover > span {
   color: darkblue;
 }
 .c100.bleu.dark .bar,
 .c100.bleu.dark .fill {
-  border-color: blue;
+  border-color: blue!important;
 }
 .c100.bleu.dark:hover > span {
   color:blue;
 }
 
 
-.c100.red.bar,
-.c100.red.fill {
-  border-color: red;
+.c100.rouge .bar,
+.c100.rouge .fill {
+  border-color:red!important;
 }
-.c100.red:hover > span {
+.c100.rouge:hover > span {
   color: red;
 }
-.c100.red.dark .bar,
-.c100.red.dark .fill {
-  border-color: darkred;
+.c100.rouge.dark .bar,
+.c100.rouge.dark .fill {
+  border-color: darkred!important;
 }
-.c100.red.dark:hover > span {
-  color:darkred;
+.c100.rouge.dark:hover > span {
+  color: darkred;
 }
 
 
