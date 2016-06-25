@@ -7,12 +7,12 @@
 /*-------------- Perso css -------------*/
 
 html{
-	background-color: #222222;
+	background-color: transparent;
 }
 
 
 body{
-	font-family: 'code'; 
+	font-family: 'code'!important; 
 	font-weight: bold;
 		
 }
@@ -167,7 +167,7 @@ footer > p{
 }
 
 .service{
-	background-color: #2f3238;
+	background-color: #262626;
 	text-align: center;
 	padding-bottom: 50px;
 }
@@ -251,6 +251,27 @@ margin-top: 70%;
 
 .hr_portfolio{
 	margin-bottom: 20px;
+}
+
+#information{
+	text-align: center;
+}
+
+.titre_info{
+	margin-bottom: 50px;
+}
+
+.photo_presentation{
+	background-image: url(../img/moi.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	border-radius: 100%;
 }
 
 
@@ -469,11 +490,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #1a1a1a;
-}
-
-.bg-primary , .fix {
-  background-color: transparent;
+  background-color:#2f3238;
 }
 .bg-dark {
   background-color: #222222;
