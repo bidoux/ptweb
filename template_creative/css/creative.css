@@ -7,13 +7,12 @@
 /*-------------- Perso css -------------*/
 
 html{
-	background-color: transparent;
+	background-color:#222222 ;
 }
 
 
 body{
-	font-family: 'code'!important; 
-	font-weight: bold;
+	font-family: 'Helvetica, Arial', sans-serif;
 		
 }
 
@@ -21,10 +20,10 @@ body{
 	font-family: 'Helvetica';
 }
 
-.code_light{
+/*.code_light{
 	font-family: 'code'!important;
 	font-weight: 100;
-}
+}*/
 
 .hidden{
 	font-size: 0;
@@ -42,7 +41,7 @@ body{
 }
 
 #contact{
-	background-color:#222222;
+	background-color:#222222 ;
 	color: white;
 	padding-top: 10px;
 	text-align: center;
@@ -78,6 +77,7 @@ h2{
 .hover{
 	display: block;
 	width: 100%;
+	height: 100%;
 	margin: 0 auto;
 }
 
@@ -89,56 +89,10 @@ h2{
 	z-index: 10;
 }
 
-.hover-v{
-	width: 100%;
-	height: 250.63px;
-	text-align: center;
-	position: relative;
-	margin-top: -250px;
-	float: left;
-	background-color: darkorange;
-	z-index: -10;
-}
-
-.hover-photo{
-	width: 100%;
-	text-align: center;
-	position: relative;
-	margin-top: -330px;
-	float: left;
-	opacity: 0.7;
-	background-color: firebrick;
-	z-index: -10;
-}
-
-.portfolio-box {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding:9px;
-}
-
-.titre_video{
-	text-align: center;
-	line-height: 625%;
-	color: white;
-	font-size:40px;
-	font-weight: bold;
-	font-family: 'code';
-}
-
-.ph{
-	text-align: center;
-	line-height: 330%;
-	color: white;
-	font-size:100px;
-	font-weight: bold;
-	font-family: 'code';
-}
 
 footer{
 	height: 50px;
-	background-color: #2f3238;
+	background-color: #2f3238 ;
 	
 }
 
@@ -151,10 +105,8 @@ footer > p{
 
 .pourcentage{
 	display: inline-block;
-	text-align: center;
 	padding: 50px;
 	font-weight: 100;
-	
 }
 
 .c100{
@@ -195,6 +147,10 @@ footer > p{
 	padding:0;
 }
 
+.text-center{
+	padding: 0!important;
+}
+
 .container{
 	width: 100%;
 }
@@ -206,6 +162,7 @@ p.welcome{
 
 .p_blanc{
 	color: white!important;
+	padding-top: 70px;
 }
 
 /*.description{
@@ -225,11 +182,13 @@ p.welcome{
 
 .btn{
 	background-color: darkorange!important;
+	font-family:'Arial', sans-serif!important;
 }
 
 .photos{
 	color: white!important;
-	margin-top: 20px;
+	margin-top: 50px;
+	margin-bottom: 80px;
 }
 
 .pourcent:hover{
@@ -255,6 +214,7 @@ margin-top: 70%;
 
 #information{
 	text-align: center;
+	background-color: #2f3238 ;
 }
 
 .titre_info{
@@ -274,7 +234,32 @@ margin-top: 70%;
 	border-radius: 100%;
 }
 
+.contact{
+	margin-bottom: 50px;
+}
 
+.plus{
+	font-size: 70px!important;
+}
+
+.h3_colonne{
+	color: white!important;
+	font-size: 25px;
+}
+
+.p_colonne{
+	color: white;
+	text-align: justify;
+	font-size: 17px;
+}
+
+.row{
+	padding: 20px;
+}
+
+.important{
+	color: darkorange;
+}
 /*-----------Formulaire --------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -289,7 +274,6 @@ margin-top: 70%;
 	float:left;
 	padding-top:0px;
 	margin: 0 auto;
-	text-align: center;
 }
 
 #form-div {
@@ -298,7 +282,7 @@ margin-top: 70%;
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 600px;
+	width: 500px;
 	margin: 0 auto;
   margin-top:30px;
   -moz-border-radius: 7px;
@@ -322,7 +306,6 @@ margin-top: 70%;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
   border: 3px solid rgba(0,0,0,0);
-	margin-left: 3%;
 }
 
 .feedback-input:focus{
@@ -390,8 +373,8 @@ input:focus, textarea:focus {
 
 #button-blue{
 	/*font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
-	float:left;
-	width: 93.5%;
+	width: 70%;
+	margin: 0 auto;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
 	background-color: orange;
@@ -402,9 +385,8 @@ input:focus, textarea:focus {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-  margin-top:-4px;
+  margin-top:20px;
   font-weight:700;
-	margin-left: 3%;
 }
 
 #button-blue:hover{
@@ -415,18 +397,7 @@ input:focus, textarea:focus {
 .submit:hover {
 	color: #3498db;
 }
-	
-.ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
-	margin-left: 3%;
-}
+
 
 .submit:hover .ease{
   width: 93.5%;
@@ -437,13 +408,13 @@ input:focus, textarea:focus {
 	#form-div{
 		left: 3%;
 		margin-right: 3%;
-		width: 88%;
+		width: 100%;
 		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
+		padding-left: 5%;
+		padding-right: 5%;
+		text-align: center;
 	}
 }
-
 
 
 
@@ -482,7 +453,7 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -490,10 +461,10 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color:#2f3238;
+	background-color:transparent;
 }
 .bg-dark {
-  background-color: #222222;
+  
   color: white;
 }
 .text-faded {
@@ -502,25 +473,22 @@ p {
 section {
   padding: 100px 0;
 }
-aside {
-  padding: 50px 0;
-}
+
 .no-padding {
-  padding: 20px;
+  padding: 0;
   background-color: #222222;
-  z-index: -10000;
 }
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
-  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #f05f40;
-  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -602,6 +570,7 @@ header {
   background-attachment: fixed!important;
   text-align: center;
   color: white;
+  margin-bottom: 50px;
 }
 header .header-content {
   position: relative;

@@ -229,7 +229,7 @@
   height: 1em;
   border-radius: 50%;
   float: left;
-  margin: 0 0.5em 0.1em 0.5em;
+  margin: 0 0.5em 0.1em 0.1em;
   background-color: #cccccc;
 	margin-bottom:40px;
 }
@@ -1053,12 +1053,21 @@
  background-size: contain;
 }
 
-.c100:hover{
-	color: transparent;
+.office:hover > .pourcent {
+ background-image: url(../img/logiciel/office.jpg);
+ background-size: contain;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 
 
+
+
+.c100:hover{
+	color: transparent;
+}
 
 
 .c100:hover:after {
