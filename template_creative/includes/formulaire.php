@@ -1,26 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
 <?php
-// Check for empty fields
-if(empty($_POST['name'])  		||
-   empty($_POST['email']) 		||
-   empty($_POST['phone']) 		||
-   empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   {
-	echo "No arguments Provided!";
-	return false;
-   }
-	
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
-	
-// Create the email and send the message
-$to = 'idoux.bao@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";	
-mail($to,$email_subject,$email_body,$headers);
-return true;			
+    $to = "idoux.bao@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $last_name = $_POST['nom'];
+    $subject = "Message depuis baoidoux.fr";
+    $subject2 = "Copie de votre message";
+    $message = $last_name . " à écrit : \n\n" . $_POST['text'];
+    $message2 = "Voici une copie de votre message \n\n" . $_POST['text'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    // You cannot use header and echo together. It's one or the other.
+    header('refresh: 2; url=../index.html#contact'); // redirect the user after 10 seconds
+    #exit; // note that exit is not required, HTML can be displayed.
 ?>
+<div>
+  <p>Message envoyé ! Merci <?php echo $first_name ?>, je vous contacterai prochainement.</p>
+  <p>Vous allez être redirigé(e) dans <span id="counter">5</span> second(s).</p>
+</div>
+  <script type="text/javascript">
+  function countdown() {
+      var i = document.getElementById('counter');
+      if (parseInt(i.innerHTML)<=0) {
+          location.href = '../index.html#contact';
+      }
+      i.innerHTML = parseInt(i.innerHTML)-1;
+  }
+  setInterval(function(){ countdown(); },1000);
+</script>
+</body>
+</html>
